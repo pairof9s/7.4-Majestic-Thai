@@ -1,0 +1,121 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #855821;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #2E2002;
+  //color: #78604C;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #855821;
+}
+
+h3 {
+  text-align: left;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #2E2002;
+  //color: #78604C;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+h4 {
+  text-align: center;
+  color: #855821;
+  //color: #D19A66;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: -4px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.headbar {
+  position: relative;
+  width: 100%;
+  height: 120px;
+  background-image: url('../images/bkgrd_pattern.png');
+  background-repeat: repeat;
+  background-color: #D3C498;
+  border-left: 1px solid #2E2002;
+  border-right: 1px solid #2E2002;
+  border-bottom: 1px solid #2E2002;
+}
+
+.infosect {
+  width: 100%;
+  height: 800px;
+  background-color: #FFFEF7;
+  border-left: 1px solid #2E2002;
+  border-right: 1px solid #2E2002;
+}
+
+.menu-box {
+  position: relative;
+  float: left;
+  margin-top: 20px;
+}
+
+.order-box {
+  position: relative;
+  float: right;
+  margin-top: 20px;
+}
+
+.well {
+  background-color: #D3C498;
+  border: 1px solid #2E2002;
+}
+
+.nav {
+font-family: 'Libre Baskerville', serif;
+font-weight: 600;
+color: #2E2002;
+}
+
+.nav a {
+  color: #D19A66;
+}
+
+.tab-pane {
+  width: 100%;
+  padding-top: 4px;
+  padding-left: 6px;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  font-size: 1em;
+  color: #2E2002;
+  line-height: 2.5em;
+}
