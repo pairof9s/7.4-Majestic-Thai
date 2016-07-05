@@ -8,6 +8,7 @@ var models = require('./models/food.js');
 var FoodCollection = require('./models/food.js').FoodCollection;
 var FoodList = require('./components/menulisting.jsx').FoodList;
 
+
 var foodMenu = new models.FoodCollection();
 foodMenu.add([
   // Appetizers //
@@ -31,7 +32,7 @@ foodMenu.add([
   //Drinks //
   {'tag': 'drink', 'name': 'Soda', 'description': 'Coke, Diet Coke, Sprite, Dr. Pepper', 'price': '$1.95'},
   {'tag': 'drink', 'name': 'Iced Tea', 'description': 'sweet, half & half, or unsweetened', 'price': '$1.50'},
-  {'tag': 'drink', 'name': 'Thai Beer', 'description': 'get tipsy...why not?', 'price': '$2.95'},
+  {'tag': 'drink', 'name': 'Thai Beer', 'description': 'Thai one on...why not?', 'price': '$2.95'},
 ]);
 
 ReactDOM.render(

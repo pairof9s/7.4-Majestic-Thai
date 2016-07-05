@@ -2,18 +2,22 @@ var Backbone = require('backbone');
 
 
 var Food = Backbone.Model.extend({
-  idAttributes: '_id',
-  defaults: {
-    'name': '',
-    'description': '',
-    'price': ''
+  // idAttributes: '_id',
+  // defaults: {
+  //   'name': '',
+  //   'description': '',
+  //   'price': ''
+  // },
+  displayPrice: function(){
+    return '$' + (this.get('price') / 100).toFixed(2);
   }
 });
 
 var FoodCollection = Backbone.Collection.extend({
   model: Food,
-  url: 'http://tiny-lasagna-server.herokuapp.com/collections/D9food'
+
 });
+
 
 module.exports = {
   'Food': Food,
