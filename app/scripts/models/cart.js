@@ -2,17 +2,16 @@ var Backbone = require('backbone');
 
 var Food = require('./food').Food;
 
-var CartItem = Food.extend({
-});
+var CartItem = Food.extend();
 
 var CartCollection = Backbone.Collection.extend({
   model: CartItem,
   getCartTotal: function(){
-    var price = this.reduce(function(memo, model){
+    var itemPrice = this.reduce(function(memo, model){
       return memo + model.get('price');
     }, 0);
 
-    return '$' + (price / 100).toFixed(2);
+    return '$' + (itemPrice / 100).toFixed(2);
   }
 });
 
