@@ -7,11 +7,10 @@ var CartItem = Food.extend();
 var CartCollection = Backbone.Collection.extend({
   model: CartItem,
   getCartTotal: function(){
-    var itemPrice = this.reduce(function(memo, model){
-      return memo + model.get('price');
+    var price = this.reduce(function(memo, model){
+      return (memo + model.get('price') / 100);
     }, 0);
-
-    return '$' + (itemPrice / 100).toFixed(2);
+    return '$' + price.toFixed(2);
   }
 });
 

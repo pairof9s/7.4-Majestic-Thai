@@ -26,6 +26,10 @@ ul {
   list-style: none;
 }
 
+li {
+  margin-bottom: 8px;
+}
+
 h1 {
   text-align: center;
   font-family: 'Libre Baskerville', serif;
@@ -58,6 +62,16 @@ h4 {
   margin-top: -4px;
 }
 
+h5 {
+  display: inline-block;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #2E2002;
+  padding-left: 10px;
+}
+
 h6 {
   text-align: left;
   font-family: 'Libre Baskerville', serif;
@@ -68,10 +82,10 @@ h6 {
 
 .container {
   margin: 0 auto;
+  padding: 0;
 }
 
 .headbar {
-  position: relative;
   width: 100%;
   height: 120px;
   background-image: url('../images/bkgrd_pattern.png');
@@ -84,7 +98,7 @@ h6 {
 
 .infosect {
   width: 100%;
-  height: 800px;
+  min-height: 800px;
   background-color: #FFFEF7;
   border-left: 1px solid #2E2002;
   border-right: 1px solid #2E2002;
@@ -139,6 +153,7 @@ color: #2E2002;
 .menu-item button {
   float: right;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .cart-box {
@@ -146,4 +161,27 @@ color: #2E2002;
   font-weight: 400;
   font-size: .9em;
   color: #2E2002;
+  text-align: right;
+}
+
+#cart-item {
+  margin-right: 10px;
+}
+
+#cart-title {
+  line-height: .5em;
+  border-bottom: 1px solid #2E2002;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.cart-total {
+  line-height: 1.7em;
+  font-weight: 700;
+  font-size: 1.2em;
+  border-top: 1px solid #2E2002;
+}
+
+.order-button {
+  margin-top: 6px;
 }
